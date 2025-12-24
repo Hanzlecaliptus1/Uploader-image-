@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Uploader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Image Uploader</h1>
+
+    <div id="drop-zone" class="drop-zone">
+      <p>Tarik & lepas gambar di sini, atau klik tombol "Pilih File"</p>
+      <input id="file-input" type="file" accept="image/*" />
+    </div>
+
+    <div class="preview">
+      <img id="preview-img" alt="Preview" src="" />
+    </div>
+
+    <div class="controls">
+      <button id="upload-btn" class="btn">Upload</button>
+      <progress id="progress" value="0" max="100" style="display:none;"></progress>
+    </div>
+
+    <div id="message" class="message"></div>
+    <div id="result" class="result"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
